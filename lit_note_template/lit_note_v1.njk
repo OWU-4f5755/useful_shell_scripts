@@ -1,0 +1,19 @@
+{{title}}
+{{DOI}}
+{{date | format ("YYYY")}}
+{{bibliography}}
+{{pdfZoteroLink}}
+{{citekey}}
+[[{{citekey}}.pdf]]
+
+{% for n in notes %}
+{{n.note}}
+{% endfor %}
+
+{% for t in tags %}#{{t.tag | replace(' ','-')}} {% endfor %}
+
+{% for annotation in annotations %}
+{% if annotation.annotatedText %}{{annotation.annotatedText}}{% endif %}
+{% if annotation.imageBaseName %}![[{{annotation.imageBaseName}}]]{% endif %}
+{% if annotation.comment %}=={{annotation.comment}}=={% endif %}
+{% endfor %}
