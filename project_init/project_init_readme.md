@@ -15,3 +15,11 @@ This is a shell script that creates a new project directory with some initial fi
 11. Creates a new public GitHub repository with the same name as the project.
 12. Connects the local Git repository to the remote GitHub repository.
 13. Pushes the initial commit to the remote GitHub repository.
+
+Note: working .zshrc profile code below that activates the conda environment and sets up the terminal prompt (if/else Warp statement disabled):
+```zsh
+eval "$(starship inist zsh)"
+
+source ~/start_miniconda.sh
+alias code="code-insiders"
+```
