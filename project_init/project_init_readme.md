@@ -1,4 +1,4 @@
-# Project_Init - A script to initialize a new project
+# README: Project_Init - A script to initialize a new project
 
 This is a shell script that creates a new project directory with some initial files and configurations. Enumerated process below:
 

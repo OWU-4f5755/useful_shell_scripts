@@ -1,4 +1,4 @@
-# README
+# README: VS Code Files
 
 This directory contains exported files delineating my current VS Code-Insiders settings and extensions.
 
