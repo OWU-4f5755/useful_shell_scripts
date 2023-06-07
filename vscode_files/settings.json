@@ -1,0 +1,329 @@
+{
+    // General settings
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // prettier formatter encompasses a lot of languages
+    "editor.fontSize": 18, // Set editor font size
+    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace", // Set editor font family
+    "editor.fontLigatures": true, // Enable font ligatures
+    "editor.mouseWheelZoom": true, // Disable minimap
+    "editor.linkedEditing": true,
+    "editor.suggestSelection": "first",
+    "editor.wordWrap": "on",
+    "editor.accessibilitySupport": "off", // Set window zoom level
+    "workbench.colorTheme": "Dracula", // Set color theme
+    "workbench.iconTheme": "vscode-icons", // Set icon theme
+    "workbench.list.automaticKeyboardNavigation": false, // Disable automatic keyboard navigation
+    // General file settings
+    "files.simpleDialog.enable": true, // Enable simple dialogs
+    "files.autoSave": "afterDelay", // Autosave files after delay
+    "files.autoSaveDelay": 10000,
+    "files.trimTrailingWhitespace": false,
+    "workbench.editorAssociations": {
+        "*.pdf": "latex-workshop-pdf-hook",
+        "*.xml": "default"
+    }, // Set editor associations for file types
+    // Security settings
+    "security.workspace.trust.untrustedFiles": "open", // Open untrusted files
+    // Settings Sync settings
+    "settingsSync.ignoredSettings": [
+        "-window.zoomLevel"
+    ], // Ignore certain settings in sync
+    // Terminal settings
+    "terminal.integrated.inheritEnv": false, // Inherit environment variables
+    "terminal.integrated.fontFamily": "'FiraMono Nerd Font Mono'", // Set terminal font family
+    "terminal.integrated.env.osx": {}, // Terminal environment variables for macOS
+    "terminal.integrated.defaultProfile.osx": "zsh", // Set default terminal profile for macOS
+    "terminal.integrated.automationProfile.osx": {
+        "path": "/bin/zsh"
+    }, // Set automation terminal profile for macOS
+    "terminal.external.osxExec": "Warp.app", // Set external terminal for macOS
+    "terminal.explorerKind": "external", // Set terminal explorer kind
+    // Python settings
+    "python.linting.lintOnSave": true, // Lint on save for Python files
+    "python.linting.enabled": true, // Enable Python linting
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python", // Set default formatter for Python files
+        "editor.formatOnSave": true // Format Python files on save
+    },
+    "python.formatting.provider": "none", // No default Python formatting provider
+    // Project Manager settings
+    "projectManager.git.baseFolders": [
+        "/Users/oscarwu_admin_1.0/repos"
+    ], // Set base folders for Project Manager
+    "gitProjectManager.baseProjectsFolders": [
+        "/Users/oscarwu_admin_1.0/repos"
+    ], // Set base projects folders for Git Project Manager
+    // Code Runner settings { /* Executor map for different languages */ },
+    "code-runner.executorMap": {
+        "javascript": "node",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python3 -u",
+        "perl": "perl",
+        "perl6": "perl6",
+        "ruby": "ruby",
+        "go": "go run",
+        "lua": "lua",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "fsharp": "fsi",
+        "csharp": "scriptcs",
+        "vbscript": "cscript //Nologo",
+        "typescript": "ts-node",
+        "coffeescript": "coffee",
+        "scala": "scala",
+        "swift": "swift",
+        "julia": "julia",
+        "crystal": "crystal",
+        "ocaml": "ocaml",
+        "r": "Rscript",
+        "applescript": "osascript",
+        "clojure": "lein exec",
+        "haxe": "haxe --cwd $dirWithoutTrailingSlash --run $fileNameWithoutExt",
+        "rust": "cd $dir && rustc $fileName && $dir$fileNameWithoutExt",
+        "racket": "racket",
+        "scheme": "csi -script",
+        "ahk": "autohotkey",
+        "autoit": "autoit3",
+        "dart": "dart",
+        "pascal": "cd $dir && fpc $fileName && $dir$fileNameWithoutExt",
+        "d": "cd $dir && dmd $fileName && $dir$fileNameWithoutExt",
+        "haskell": "runhaskell",
+        "nim": "nim compile --verbosity:0 --hints:off --run",
+        "lisp": "sbcl --script",
+        "kit": "kitc --run",
+        "v": "v run",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css",
+        "FortranFreeForm": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran-modern": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran_fixed-form": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "fortran": "cd $dir && gfortran $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "sml": "cd $dir && sml $fileName",
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "markdown.extension.math.enabled": false,
+    "rainbow_csv.csv_lint_detect_trailing_spaces": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "memo.backlinksPanel.collapseParentItems": true,
+    "gitlens.codeLens.enabled": false,
+    "cSpell.customDictionaries": {
+        "custom-dictionary-user": {
+            "addWords": true,
+            "name": "custom-dictionary-user",
+            "path": "/Users/oscarwu_admin_1.0/.cpell/custom-user-dictionary.text", //has to be set at home directory
+            "scope": "user" // global dictionary ie. for all vscode projects
+        },
+    },
+    "hediet.vscode-drawio.resizeImages": null,
+    // Better Comments settings
+    "better-comments.tags": [
+        {
+            "bold": false,
+            "color": "#FF2D00",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "!",
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "bold": false,
+            "color": "#3498DB",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "?",
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "bold": false,
+            "color": "#474747",
+            "italic": false,
+            "strikethrough": true,
+            "tag": "//",
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "bold": false,
+            "color": "#FF8C00",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "todo",
+            "underline": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "bold": false,
+            "color": "#98C379",
+            "italic": false,
+            "strikethrough": false,
+            "tag": "*",
+            "underline": false,
+            "backgroundColor": "transparent"
+        }
+    ],
+    "better-comments.highlightPlainText": true, // Highlight plain text comments
+    // GitHub Copilot settings
+    "github.copilot.advanced": {}, // Advanced Copilot settings
+    "github.copilot.enable": {
+        "markdown": true,
+        "*": true,
+        "sql": true,
+        "plaintext": true,
+        "python": true,
+        "javascript": true,
+        "typescript": true,
+        "html": true,
+        "css": true,
+        "latex": true,
+        "tex": true,
+        "bibtex": true,
+        "shellscript": true,
+        "r": true,
+        "json": true,
+        "jsonc": true,
+        "powershell": true,
+        "handlebars": true,
+        "drawio": true,
+        "dockerfile": true,
+        "cpp": true,
+        "xml": true
+    }, // Enable Copilot for various languages
+    // CodeGPT settings
+    "CodeGPT.model": "gpt-4", // Set CodeGPT model to GPT-4
+    "CodeGPT.maxTokens": 5000, // Set max tokens for CodeGPT
+    "CodeGPT.temperature": 0.4, // Set temperature for CodeGPT
+    // Markdown settings
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode" // Set default formatter for Markdown files
+    },
+    // Markdown Preview Enhanced settings
+    "markdown-preview-enhanced.liveUpdate": true, // Enable live update for Markdown preview
+    // Markdown Shortcuts settings
+    "markdownShortcuts.icons.link": true, // Show link icon in Markdown
+    "markdownShortcuts.icons.image": true, // Show image icon in Markdown
+    "markdownShortcuts.icons.citations": true, // Show citation icon in Markdown
+    // Zotero settings
+    "zotero.minimizeAfterPicking": true, // Minimize Zotero after picking
+    // JSON settings
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features" // Set default formatter for JSON files
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features" // Set default formatter for JSONC files
+    },
+    // Red Hat telemetry settings
+    "redhat.telemetry.enabled": true, // Enable Red Hat telemetry
+    // Tabnine settings
+    "tabnine.experimentalAutoImports": true, // Enable Tabnine experimental auto imports
+    // Paste image settings
+    "pasteImage.showFilePathConfirmInputBox": true, // Show file path confirm input box
+    // Other settings
+    "editor.inlineSuggest.enabled": true, // Enable inline suggestions
+    "codestream.serverUrl": "https://api.codestream.com", // Set Codestream server URL
+    // Language Formatter Settings (besides Python, JSON/JSONC, & Markdown defined above)
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.useEditorConfig": false,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html"
+    },
+    "git.ignoreMissingGitWarning": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "editor.renderWhitespace": "boundary",
+    "editor.letterSpacing": 0.2,
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "terminal.integrated.cursorStyle": "line",
+    "explorer.sortOrder": "type",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.settings.editor": "json",
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.scrollToSwitchTabs": true, // Scroll to switch tabs without holding shift key
+    "files.defaultLanguage": "${activeEditorLanguage}", // can also use "${activeEditorLanguage}" to create "file.language-from-last-active-file"
+    "editor.suggest.showStatusBar": true,
+    "editor.multiCursorModifier": "ctrlCmd", // Add Ctrl/Cmd to add cursors
+    "editor.suggest.insertMode": "insert",
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        }
+    ],
+    "gitlens.views.commitDetails.files.layout": "tree",
+    "notebook.lineNumbers": "on",
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "diffEditor.diffAlgorithm": "advanced", // slower but better diffs
+    "notebook.output.scrolling": true,
+    "notebook.output.wordWrap": true,
+    "settingsSync.ignoredExtensions": [],
+	"editor.minimap.renderCharacters": false, // don't render characters in minimap (cannot see chars anyways) -> see shapes instead
+	"editor.minimap.scale": 3, // Scale of content drawn in the minimap: 1, 2 or "3".
+	"editor.minimap.autohide": true, // minimap is hidden automatically.
+    "workbench.commandPalette.experimental.useSemanticSimilarity": true,
+    "breadcrumbs.enabled": false // Use semantic similarity when sorting suggestions in the command palette
+}
